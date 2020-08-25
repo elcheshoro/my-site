@@ -21,7 +21,7 @@ export default function Contact() {
       <div>
         <span>{randomCharacters.substring(0, emailIndex)}</span>
         <a
-          href="mailto:a.g.cheshire@email.com"
+          href="mailto:contact@alexcheshire.me"
           className={classNames('Contact__Info', {
             'Contact__Info--selected': selected === 'email',
           })}
