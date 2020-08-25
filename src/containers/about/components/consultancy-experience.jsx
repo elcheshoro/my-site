@@ -4,7 +4,7 @@ export default () => (
   <div>
     <div>
       After university I started my career on a graduate scheme at a software
-      consultancy in Newcastle-Upon-Type called Scott Logic.
+      consultancy called Scott Logic in Newcastle-upon-Type.
     </div>
     <br />
     <div>
