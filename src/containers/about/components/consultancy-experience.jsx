@@ -13,7 +13,7 @@ export default () => (
     </div>
     <br />
     <div>
-      It was great experience and I learnt so much so quickly whilst working
+      It was a great experience and I learnt so much so quickly whilst working
       here.
     </div>
     <br />
