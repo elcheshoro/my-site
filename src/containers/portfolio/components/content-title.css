@@ -1,0 +1,11 @@
+.PortfolioContentTitle {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+    .PortfolioContentTitle {
+      font-size: 20px;
+    }
+}

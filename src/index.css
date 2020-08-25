@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Retro';
+    src: url('./assets/retro-font.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rpg';
+    src: url('./assets/rpg-font.ttf') format('truetype');
+}
+
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #646165;
+}
+
+button {
+    all: unset;
+}
+
+a {
+    all: unset
+}

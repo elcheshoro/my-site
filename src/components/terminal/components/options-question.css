@@ -1,0 +1,12 @@
+.TerminalOptionsQuestion__Options {
+    display: flex;
+    flex-direction: column;
+}
+
+.TerminalOptionsQuestion__Option--selected {
+  font-weight: bolder;
+}
+
+.TerminalOptionsQuestion__Option {
+  cursor: pointer;
+}

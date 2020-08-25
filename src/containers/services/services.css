@@ -1,0 +1,51 @@
+.Services {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Services__Section {
+    background-color: #dff1d6;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Rpg;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.Services__SectionTitle {
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Services__SectionTitle svg {
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    transition: transform 0.2s;
+    transition-delay: 0.1s;
+}
+
+.Services__SectionTitle--open svg {
+    transform: rotate(90deg);
+}
+
+.Services__SectionText {
+    margin-bottom: 10px;
+}
+
+.Services__SectionContent {
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.Services__SectionContent--open {
+    max-height: 370px;
+}
+

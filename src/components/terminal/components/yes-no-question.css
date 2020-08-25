@@ -1,0 +1,13 @@
+.TerminalYesNoQuestion__NoButton--selected,
+.TerminalYesNoQuestion__YesButton--selected {
+  font-weight: bolder;
+}
+
+.TerminalYesNoQuestion__Actions {
+  display: flex;
+}
+
+.TerminalYesNoQuestion__NoButton,
+.TerminalYesNoQuestion__YesButton {
+  margin-right: 10px;
+}

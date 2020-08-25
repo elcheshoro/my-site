@@ -1,0 +1,12 @@
+.Terminal {
+  background-color: black;
+  color: #39ff14;
+  border: 1px double #39ff14;
+  padding: 10px;
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size: 15px;
+  overflow: auto;
+  max-height: 500px;
+  max-width: 1000px;
+  line-height: 25px;
+}

@@ -1,0 +1,81 @@
+.Contact {
+    width: 100%;
+}
+
+.Contact__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact__WordSearch {
+    background-color: grey;
+    background-color: black;
+    color: #39ff14;
+    border: 1px double #39ff14;
+    padding: 10px;
+    font-family: 'Lucida Console', Monaco, monospace;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 14px;
+    width: 500px;
+    height: 320px;
+}
+
+.Contact__Info {
+    color: #39ff14;
+    text-transform: uppercase;
+}
+
+.Contact__Info--selected {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Contact__LinkButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.Contact__LinkButton {
+    background-color: #B248C1;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 75px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.Contact__LinkButton:hover {
+  background-color: #A040AD;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Contact__WordSearch {
+    width: 400px;
+    height: 280px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .Contact__WordSearch {
+    width: 300px;
+    height: 250px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .Contact__WordSearch {
+    width: 250px;
+    height: 300px;
+    font-size: 10px;
+  }
+}

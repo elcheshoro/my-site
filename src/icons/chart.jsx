@@ -1,0 +1,51 @@
+import React from 'react';
+
+export default () => (
+  <svg width="100%" viewBox="0 0 54 54">
+    <rect
+      strokeWidth="2"
+      fill="#ffffff"
+      stroke="#000000"
+      height="50"
+      width="10"
+      y="2"
+      x="2"
+    />
+    <rect
+      strokeWidth="2"
+      fill="#ffffff"
+      stroke="#000000"
+      height="20"
+      width="10"
+      y="32"
+      x="12"
+    />
+    <rect
+      strokeWidth="2"
+      fill="#ffffff"
+      stroke="#000000"
+      height="30"
+      width="10"
+      y="22"
+      x="22"
+    />
+    <rect
+      strokeWidth="2"
+      fill="#ffffff"
+      stroke="#000000"
+      height="40"
+      width="10"
+      y="12"
+      x="32"
+    />
+    <rect
+      strokeWidth="2"
+      fill="#ffffff"
+      stroke="#000000"
+      height="10"
+      width="10"
+      y="42"
+      x="42"
+    />
+  </svg>
+);

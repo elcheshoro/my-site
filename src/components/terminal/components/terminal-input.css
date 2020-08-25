@@ -1,0 +1,27 @@
+.TerminalInput {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.TerminalInput input {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-family: 'Lucida Console', Monaco, monospace;
+  width: 100%;
+}
+
+.TerminalInput input:focus {
+  outline: none;
+}
+
+.TerminalInput__Pointer {
+  margin-top: -2px;
+  margin-right: 5px;
+  color: white;
+}
+
+.TerminalInput__InputWrapper {
+  flex: 1;
+}
