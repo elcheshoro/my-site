@@ -4,51 +4,11 @@ import classNames from 'classnames';
 
 import Page from '../../components/page/page';
 
-import generateContent from './helpers/generateContent';
-
 import './contact.css';
-
-const randomCharacters = generateContent();
-const emailIndex = Math.floor(Math.random() * 500);
-const linkedInIndex = Math.floor(Math.random() * 500 + 500);
 
 export default function Contact() {
   const history = useHistory();
-  const [selected, setSelected] = useState(null);
-
-  const renderContent = () => {
-    return (
-      <div>
-        <span>{randomCharacters.substring(0, emailIndex)}</span>
-        <a
-          href="mailto:contact@alexcheshire.me"
-          className={classNames('Contact__Info', {
-            'Contact__Info--selected': selected === 'email',
-          })}
-        >
-          contact@alexcheshire.me
-        </a>
-        <span>{randomCharacters.substring(emailIndex, linkedInIndex)}</span>
-        <a
-          className={classNames('Contact__Info', {
-            'Contact__Info--selected': selected === 'linkedIn',
-          })}
-          href="https://www.linkedin.com/in/alex-cheshire-6536641b2/"
-        >
-          https://www.linkedin.com/in/alex&#8209;cheshire&#8209;6536641b2/
-        </a>
-        <span>{randomCharacters.substring(linkedInIndex)}</span>
-      </div>
-    );
-  };
-
-  const handleButtonClick = (key) => {
-    if (selected === key) {
-      setSelected(null);
-    } else {
-      setSelected(key);
-    }
-  };
+  const [selected, setSelected] = useState('email');
 
   return (
     <Page backgroundColor="F2D7EE" onBack={() => history.push('/')}>
@@ -56,21 +16,42 @@ export default function Contact() {
         <div className="Contact__Content">
           <div className="Contact__LinkButtons">
             <button
-              className="Contact__LinkButton"
+              className={classNames('Contact__LinkButton', {
+                'Contact__LinkButton--selected': selected === 'email',
+              })}
               type="button"
-              onClick={() => handleButtonClick('email')}
+              onClick={() => setSelected('email')}
             >
               Email
             </button>
             <button
-              className="Contact__LinkButton"
+              className={classNames('Contact__LinkButton', {
+                'Contact__LinkButton--selected': selected === 'linkedIn',
+              })}
               type="button"
-              onClick={() => handleButtonClick('linkedIn')}
+              onClick={() => setSelected('linkedIn')}
             >
               LinkedIn
             </button>
           </div>
-          <div className="Contact__WordSearch">{renderContent()}</div>
+          <div className="Contact__Info">
+            <a
+              href="mailto:contact@alexcheshire.me"
+              className={classNames('Contact__Link', {
+                'Contact__Link--selected': selected === 'email',
+              })}
+            >
+              contact@alexcheshire.me
+            </a>
+            <a
+              className={classNames('Contact__Link', {
+                'Contact__Link--selected': selected === 'linkedIn',
+              })}
+              href="https://www.linkedin.com/in/alexcheshire/"
+            >
+              www.linkedin.com/in/alexcheshire
+            </a>
+          </div>
         </div>
       </div>
     </Page>
