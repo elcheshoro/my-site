@@ -10,6 +10,14 @@
   cursor: pointer;
 }
 
+.Page__Header svg {
+  color: #646165; 
+}
+
+.Page__Header svg:hover {
+  color: #312e32; 
+}
+
 .Page__Content {
   padding: 20px 60px;
   flex: 1;

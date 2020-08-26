@@ -10,7 +10,10 @@ export default function Page({ children, backgroundColor, onBack }) {
     <div className="Page" style={{ backgroundColor }}>
       <div className="Page__Header">
         <ArrowBackIcon
-          style={{ color: '#646165', height: '50px', width: '50px' }}
+          style={{
+            height: '50px',
+            width: '50px',
+          }}
           onClick={onBack}
         />
       </div>
