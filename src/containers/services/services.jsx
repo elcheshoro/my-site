@@ -78,7 +78,7 @@ export default function Services() {
               direction to optimise chances of success.
             </div>
             <div className="Services__SectionText">
-              I have worked in numerous start ups and have seen what works and
+              I have worked in numerous startups and have seen what works and
               what doesn&apos;t.
             </div>
             <div className="Services__SectionText">

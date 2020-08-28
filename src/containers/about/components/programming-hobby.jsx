@@ -5,7 +5,7 @@ export default () => (
     <div>I love to program.</div>
     <br />
     <div>
-      From hackathons and katas to hobby projects I can&apos;t get enough.
+      From hackathons and katas to hobby projects, I can&apos;t get enough.
     </div>
     <br />
     <div>

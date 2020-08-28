@@ -248,7 +248,7 @@ export default {
         value: 'consultancy',
       },
       {
-        label: 'Start ups',
+        label: 'Startups',
         value: 'startups',
       },
       {

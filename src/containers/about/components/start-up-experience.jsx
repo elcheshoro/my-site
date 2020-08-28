@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <div>
     <div>
-      Since moving to Manchester in 2015 I have worked for a number of start up
+      Since moving to Manchester in 2015 I have worked for a number of startup
       type companies.
     </div>
     <br />
@@ -16,7 +16,7 @@ export default () => (
     <ul>
       <li>A dashboard board add for AI analytics</li>
       <li>A taxi booking tool</li>
-      <li>A manufacturing logisitcs application</li>
+      <li>A manufacturing logistics application</li>
       <li>A mobile app for booking personal trainers</li>
     </ul>
     <div>

@@ -9,7 +9,7 @@ export default () => (
     <Content>
       <ContentTitle>AI Data Analytics</ContentTitle>
       <ContentLine>
-        I worked for a Manchester based start up who specialise in using AI and
+        I worked for a Manchester based startup who specialise in using AI and
         statistics to process sales data for retail companies.
       </ContentLine>
       <ContentLine>
