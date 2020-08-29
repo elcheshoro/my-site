@@ -6,7 +6,7 @@
   "scripts": {
     "analyse": "source-map-explorer 'build/**/*.js'",
     "build": "webpack --mode=production",
-    "serve": "http-server build",
+    "serve": "http-server build -p 3000",
     "start": "webpack-dev-server --open",
     "lint": "eslint src/**/*.js src/**/*.jsx",
     "format": "prettier --write src/**/*.js src/**/*.jsx"
