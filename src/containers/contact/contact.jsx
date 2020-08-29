@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import classNames from 'classnames';
 
 import Page from '../../components/page/page';
@@ -12,6 +13,13 @@ export default function Contact() {
 
   return (
     <Page backgroundColor="F2D7EE" onBack={() => history.push('/')}>
+      <Helmet>
+        <title>Alex Cheshire - Contact</title>
+        <meta
+          name="description"
+          content="Contact details for Alex Cheshire freelance software engineer and website developer."
+        />
+      </Helmet>
       <div className="Contact">
         <div className="Contact__Content">
           <div className="Contact__LinkButtons">

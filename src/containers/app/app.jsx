@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import Home from '../home/home';
 import About from '../about/about';
@@ -10,6 +11,13 @@ import Contact from '../contact/contact';
 export default function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Alex Cheshire - Software Engineer</title>
+        <meta
+          name="description"
+          content="Alex Cheshire freelance software engineer and website developer specialising in startups"
+        />
+      </Helmet>
       <Switch>
         <Route path="/about">
           <About />

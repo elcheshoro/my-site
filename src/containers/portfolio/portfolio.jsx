@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useHistory } from 'react-router-dom';
 
 import Chart from '../../icons/chart';
@@ -72,6 +73,13 @@ export default function Portfolio() {
 
   return (
     <Page backgroundColor="60B2E5" onBack={() => history.push('/')}>
+      <Helmet>
+        <title>Alex Cheshire - Portfolio</title>
+        <meta
+          name="description"
+          content="Portfolio of Alex Cheshire freelance software engineer and website developer."
+        />
+      </Helmet>
       <div className="Portfolio">
         <div className="Portfolio__IconButtons">
           <button

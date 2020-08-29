@@ -45,6 +45,7 @@
     "react": "^16.13.1",
     "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "style-loader": "^1.2.1",
     "uglifyjs-webpack-plugin": "^2.2.0",

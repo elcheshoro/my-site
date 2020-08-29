@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import classNames from 'classnames';
 
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
@@ -22,6 +23,13 @@ export default function Services() {
 
   return (
     <Page backgroundColor="ACBEA3" onBack={() => history.push('/')}>
+      <Helmet>
+        <title>Alex Cheshire - Services</title>
+        <meta
+          name="description"
+          content="List of Services for Alex Cheshire freelance software engineer and website developer."
+        />
+      </Helmet>
       <div className="Services">
         <div
           className="Services__Section"
