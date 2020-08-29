@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 
 import avatar from '../../assets/avatar.png';
+import avatarWinking from '../../assets/avatar-wink.png';
 
 import './home.css';
 
 export default function Home() {
   const [highlightedTab, setHighlightedTab] = useState(1);
   const [showHighlightedTab, setShowHighlightedTab] = useState(true);
+  const [isWinking, setIsWinking] = useState(false);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -23,6 +25,18 @@ export default function Home() {
 
     return () => clearInterval(id);
   }, []);
+
+  useEffect(() => {
+    if (isWinking === true) {
+      const timeout = setTimeout(() => {
+        setIsWinking(false);
+      }, 500);
+
+      return () => clearInterval(timeout);
+    }
+
+    return () => null;
+  }, [isWinking]);
 
   const handleMouseEnter = () => {
     setShowHighlightedTab(false);
@@ -86,9 +100,13 @@ export default function Home() {
       >
         Contact
       </a>
-      <div className="HomePage__Center">
-        <img src={avatar} alt="" />
-      </div>
+      <button
+        className="HomePage__Center"
+        type="button"
+        onClick={() => setIsWinking(true)}
+      >
+        <img src={isWinking ? avatarWinking : avatar} alt="" />
+      </button>
     </div>
   );
 }

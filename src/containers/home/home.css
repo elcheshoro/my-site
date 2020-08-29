@@ -35,6 +35,11 @@
 .HomePage__Center img {
   object-fit: contain;
   height: 80%;
+  cursor: pointer;
+}
+
+.HomePage__Center img:hover {
+  height: 90%;
 }
 
 .HomePage__NavButton {
