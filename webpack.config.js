@@ -42,7 +42,10 @@ const webpackConfig = {
     }),
     new UglifyJSPlugin(),
     new CopyPlugin({
-      patterns: [{ from: 'src/assets/robots.txt', to: 'robots.txt' }],
+      patterns: [
+        { from: 'src/assets/robots.txt', to: 'robots.txt' },
+        { from: 'src/assets/sitemap.xml', to: 'sitemap.xml' },
+      ],
     }),
   ],
   resolve: {
