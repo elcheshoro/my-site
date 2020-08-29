@@ -4,13 +4,14 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  font-family: Retro;
+  color: black;
 }
 
 .HomePage__Center {
   position: absolute;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
-  font-size: 40pt;
   background-color: #cac7cb;
   border-radius: 50%;
   height: 300px;
@@ -18,8 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #646165;
   user-select: none;
 }
 
@@ -48,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30pt;
+  font-size: 25pt;
   cursor: pointer;
   color: #646165;
   user-select: none;
@@ -96,8 +95,14 @@
   background-color: #d9bed5;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   .HomePage__NavButton {
-    font-size: 25pt;
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .HomePage__NavButton {
+    font-size: 12pt;
   }
 }
