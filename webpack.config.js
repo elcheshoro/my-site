@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
 const path = require('path');
 
 const scripts = path.resolve(__dirname, 'src');
@@ -28,11 +30,7 @@ const webpackConfig = {
       },
       {
         test: /\.ttf$/,
-        use: [
-          {
-            loader: 'url-loader',
-          },
-        ],
+        loader: 'url-loader',
       },
     ],
   },
@@ -43,6 +41,9 @@ const webpackConfig = {
       favicon: './src/assets/favicon.ico',
     }),
     new UglifyJSPlugin(),
+    new CopyPlugin({
+      patterns: [{ from: 'src/assets/robots.txt', to: 'robots.txt' }],
+    }),
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
