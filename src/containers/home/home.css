@@ -48,6 +48,7 @@
   color: #646165;
   user-select: none;
   transition: background-color 0.2s ease;
+  text-decoration: none;
 }
 
 .HomePage__NavButton:nth-child(1) {

@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
-import { useHistory } from 'react-router-dom';
 
 import avatar from '../../assets/avatar.png';
 
 import './home.css';
 
 export default function Home() {
-  const history = useHistory();
   const [highlightedTab, setHighlightedTab] = useState(1);
   const [showHighlightedTab, setShowHighlightedTab] = useState(true);
 
@@ -36,7 +34,7 @@ export default function Home() {
 
   return (
     <div className="HomePage">
-      <button
+      <a
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 1,
@@ -45,11 +43,11 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        onClick={() => history.push('/about')}
+        href="/#/about"
       >
         About
-      </button>
-      <button
+      </a>
+      <a
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 2,
@@ -58,11 +56,11 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        onClick={() => history.push('/services')}
+        href="/#/services"
       >
         Services
-      </button>
-      <button
+      </a>
+      <a
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 3,
@@ -71,11 +69,11 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        onClick={() => history.push('/portfolio')}
+        href="/#/portfolio"
       >
         Portfolio
-      </button>
-      <button
+      </a>
+      <a
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 4,
@@ -84,10 +82,10 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        onClick={() => history.push('/contact')}
+        href="/#/contact"
       >
         Contact
-      </button>
+      </a>
       <div className="HomePage__Center">
         <img src={avatar} alt="" />
       </div>
