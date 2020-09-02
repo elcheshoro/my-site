@@ -6,7 +6,7 @@
   "scripts": {
     "analyse": "source-map-explorer 'build/**/*.js'",
     "build": "webpack --mode=production",
-    "serve": "http-server build -p 3000",
+    "serve": "node ./server/server.js",
     "start": "webpack-dev-server --open",
     "lint": "eslint src/**/*.js src/**/*.jsx",
     "format": "prettier --write src/**/*.js src/**/*.jsx"
@@ -36,9 +36,9 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
-    "http-server": "^0.12.3",
     "path": "^0.12.7",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",

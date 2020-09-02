@@ -57,7 +57,7 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/#/about"
+        href="/about"
       >
         About
       </a>
@@ -70,7 +70,7 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/#/services"
+        href="/services"
       >
         Services
       </a>
@@ -83,7 +83,7 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/#/portfolio"
+        href="/portfolio"
       >
         Portfolio
       </a>
@@ -96,7 +96,7 @@ export default function Home() {
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/#/contact"
+        href="/contact"
       >
         Contact
       </a>

@@ -11,6 +11,7 @@ const webpackConfig = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -50,6 +51,9 @@ const webpackConfig = {
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 };
 

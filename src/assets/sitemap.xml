@@ -3,26 +3,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://alexcheshire.me/</loc>
-        <lastmod>2020-08-29</lastmod>
+        <lastmod>2020-09-02</lastmod>
     </url>
 
     <url>
-        <loc>https://alexcheshire.me/#/about</loc>
-        <lastmod>2020-08-29</lastmod>
+        <loc>https://alexcheshire.me/about</loc>
+        <lastmod>2020-09-02</lastmod>
     </url>
 
     <url>
-        <loc>https://alexcheshire.me/#/services</loc>
-        <lastmod>2020-08-29</lastmod>
+        <loc>https://alexcheshire.me/services</loc>
+        <lastmod>2020-09-02</lastmod>
     </url>
 
     <url>
-        <loc>https://alexcheshire.me/#/contact</loc>
-        <lastmod>2020-08-29</lastmod>
+        <loc>https://alexcheshire.me/contact</loc>
+        <lastmod>2020-09-02</lastmod>
     </url>
 
     <url>
-        <loc>https://alexcheshire.me/#/portfolio</loc>
-        <lastmod>2020-08-29</lastmod>
+        <loc>https://alexcheshire.me/portfolio</loc>
+        <lastmod>2020-09-02</lastmod>
     </url>
 </urlset>
