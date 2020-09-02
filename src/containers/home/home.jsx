@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 import avatar from '../../assets/avatar.png';
@@ -48,58 +49,54 @@ export default function Home() {
 
   return (
     <div className="HomePage">
-      <a
+      <Link
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 1,
         })}
-        type="button"
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/about"
+        to="/about"
       >
         About
-      </a>
-      <a
+      </Link>
+      <Link
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 2,
         })}
-        type="button"
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/services"
+        to="/services"
       >
         Services
-      </a>
-      <a
+      </Link>
+      <Link
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 3,
         })}
-        type="button"
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/portfolio"
+        to="/portfolio"
       >
         Portfolio
-      </a>
-      <a
+      </Link>
+      <Link
         className={classNames('HomePage__NavButton', {
           'HomePage__NavButton--highlighted':
             showHighlightedTab && highlightedTab === 4,
         })}
-        type="button"
         onMouseEnter={handleMouseEnter}
         onMouseOut={handleMouseOut}
         onBlur={handleMouseOut}
-        href="/contact"
+        to="/contact"
       >
         Contact
-      </a>
+      </Link>
       <button
         className="HomePage__Center"
         type="button"
